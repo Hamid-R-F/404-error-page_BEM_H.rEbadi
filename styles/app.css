@@ -23,6 +23,11 @@ body{
     margin-right: auto;
     padding: 0 15px;
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 
 
@@ -66,17 +71,69 @@ body{
 }
 
 
+/* Main */
+.main {
+    margin-top: 40px;
+}
+.page {
+
+}
+.page-content {
+    flex-basis: 50%;
+}
+.page-content__title {
+    color: #160b38;
+    font-size: 70px;
+    position: relative;
+}
+.page-content__title::before {
+    content: "";
+    position: absolute;
+    background: url("../images/Lines.svg") no-repeat;
+    top: -12px;
+    left: -22px;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+}
+.page-content__caption {
+    color: #160b38;
+    font-family: "Jost-Medium";
+    font-size: 22px;
+    line-height: 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.page-content__link {
+    display: block;
+    width: 146px;
+    background-color: #8054f6;
+    color: #fff;
+    font-family: "Jost-Bold";
+    padding: 14px 15px;
+    border-radius: 13px 13px 0 13px;
+    text-decoration: none;
+    text-align: center;
+}
+.page__banner {
+    flex-basis: 50%;
+}
+.page__img {
+    width: 100%;
+}
+
+
 
 /* app mediaquery */
 @media only screen and (max-width: 1200px) {
     .container{
-        max-width: 80%;
+        max-width: 85%;
     }
 }
 
 @media only screen and (max-width: 992px) {
     .container{
-        max-width: 80%;
+        max-width: 90%;
     }
 }
 
@@ -84,6 +141,7 @@ body{
     .container{
         max-width: 80%;
     }
+    
 }
 
 @media only screen and (max-width: 576px) {
