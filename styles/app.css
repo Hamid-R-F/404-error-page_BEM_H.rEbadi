@@ -69,7 +69,11 @@ body{
     padding: 15px 25px;
     border-radius: 13px 13px 0 13px;
 }
-
+.nav__icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
 
 /* Main */
 .main {
@@ -141,7 +145,28 @@ body{
     .container{
         max-width: 80%;
     }
-    
+    .nav__icon{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        left: -220px;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 2;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 220px;
+        padding: 25px;
+        border-radius: 0 20px 20px 0;
+        box-shadow: 1px 0 5px #8054f6;
+        transition: left 0.3s ease-in-out;
+    }
+    .menu__item{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
